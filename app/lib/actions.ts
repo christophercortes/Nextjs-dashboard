@@ -105,7 +105,6 @@ export async function updateInvoice(
  
   revalidatePath('/dashboard/invoices');
   redirect('/dashboard/invoices');
-  return { message: 'Invoice updated successfully', errors: {} };
 }
 
 export async function deleteInvoice(id: string) {
